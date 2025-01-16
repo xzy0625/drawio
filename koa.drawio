@@ -1,9 +1,79 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.2">
   <diagram name="第 1 页" id="7rzIuXr3OFP6B4VHswPW">
-    <mxGraphModel>
+    <mxGraphModel dx="1242" dy="819" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-25" value="" style="rounded=1;whiteSpace=wrap;html=1;fillStyle=dashed;fillColor=#D4D4D4;gradientColor=none;opacity=60;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="708" y="121" width="408" height="511" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-23" value="" style="rounded=1;whiteSpace=wrap;html=1;fillStyle=dashed;fillColor=#D4D4D4;gradientColor=none;opacity=60;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="95" y="123" width="408" height="511" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-1" value="将req,res赋值给Context的request和response。通过Object.Create继承至内部的request和response。原型上定义了很多属性和方法，方便使用" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="816" y="286" width="213" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="KcPEzGkJVhedPuNCQSRe-2" target="KcPEzGkJVhedPuNCQSRe-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-2" value="http.createSever" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="310" y="215" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KcPEzGkJVhedPuNCQSRe-3" target="KcPEzGkJVhedPuNCQSRe-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-6" value="原生req, res" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="KcPEzGkJVhedPuNCQSRe-5">
+          <mxGeometry x="-0.1815" y="-1" relative="1" as="geometry">
+            <mxPoint x="21" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-3" value="监听执行callback" style="whiteSpace=wrap;html=1;rounded=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="531" y="215" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="KcPEzGkJVhedPuNCQSRe-8" target="KcPEzGkJVhedPuNCQSRe-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="KcPEzGkJVhedPuNCQSRe-8" target="KcPEzGkJVhedPuNCQSRe-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-8" value="new Koa()" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="109" y="334" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KcPEzGkJVhedPuNCQSRe-11" target="KcPEzGkJVhedPuNCQSRe-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-11" value="注册middlware，compose组合" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="310" y="494" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KcPEzGkJVhedPuNCQSRe-14" target="KcPEzGkJVhedPuNCQSRe-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-14" value="收到请求" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="531" y="46" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KcPEzGkJVhedPuNCQSRe-15" target="KcPEzGkJVhedPuNCQSRe-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-15" value="传入context调用中间件，中间件可以更改context" style="whiteSpace=wrap;html=1;rounded=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="825" y="486" width="229" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.42;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="KcPEzGkJVhedPuNCQSRe-1" target="KcPEzGkJVhedPuNCQSRe-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-20" value="传入调用" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="KcPEzGkJVhedPuNCQSRe-19">
+          <mxGeometry x="-0.1051" y="-4" relative="1" as="geometry">
+            <mxPoint x="2" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-21" value="返回请求结果" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="537" y="642" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-24" value="初始化" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="126" y="155" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KcPEzGkJVhedPuNCQSRe-26" value="后续请求" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="758" y="151" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
